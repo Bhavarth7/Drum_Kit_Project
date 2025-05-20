@@ -33,6 +33,11 @@ document.addEventListener("keypress",function(event)
   makeSound(event.key)
   buttonAnimation(event.key);
 });
+
+// Make functions globally accessible for main_scene.js
+window.makeSound = makeSound;
+window.buttonAnimation = buttonAnimation;
+
 function makeSound(key)
 {
   if(key=='w')
